@@ -10,9 +10,63 @@
   margin: 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
-  // background-size: cover;
-  // background-repeat: no-repeat;
-}
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+//   @media (min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//     .hero {
+//       background-image: linear-gradient(
+//           rgba(47, 48, 58, 0.4),
+//           rgba(47, 48, 58, 0.4)
+//         ),
+//         url();
+//     }
+//   }
+//   @media screen and (min-width: 768px) {
+//     .hero {
+//       background-image: linear-gradient(
+//           rgba(47, 48, 58, 0.4),
+//           rgba(47, 48, 58, 0.4)
+//         ),
+//         url();
+//     }
+//   }
+//   @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//     .hero-main {
+//       background-image: linear-gradient(
+//           rgba(47, 48, 58, 0.4),
+//           rgba(47, 48, 58, 0.4)
+//         ),
+//         url();
+//     }
+//   }
+//   @media screen and (min-width: 1200px) {
+//     .hero-main {
+//       background-image: linear-gradient(
+//           rgba(47, 48, 58, 0.4),
+//           rgba(47, 48, 58, 0.4)
+//         ),
+//         url();
+//     }
+//   }
+//   @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//     .hero-main {
+//       background-image: linear-gradient(
+//           rgba(47, 48, 58, 0.4),
+//           rgba(47, 48, 58, 0.4)
+//         ),
+//         url();
+//     }
+//   }
+// }
+
 .hero-container {
   max-width: 360px;
 }
