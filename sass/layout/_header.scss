@@ -1,0 +1,124 @@
+.header {
+  border-bottom: 1px solid #ececec;
+  & .container {
+    display: flex;
+  }
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-list__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-list__link {
+  position: relative;
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.header__header-adress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.header-adress__item {
+  display: flex;
+  align-items: baseline;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.header-adress__mail-link {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  .header-adress__logo-mail {
+    height: 12px;
+    fill: #757575;
+    margin-right: 10px;
+  }
+}
+
+.header-adress__tel-link {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  color: #757575;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  .header-adress__logo-tel {
+    height: 16px;
+    fill: #757575;
+    margin-right: 10px;
+  }
+}
+.header-button {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.header-button .header-button__icon-close {
+  display: none;
+}
+
+.header-button.is-open .header-button__icon-close {
+  display: block;
+}
+
+.header-button.is-open .header-button__icon-menu {
+  display: none;
+}

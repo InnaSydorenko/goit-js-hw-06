@@ -1,0 +1,8 @@
+.nav-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  .btn:not(:last-child) {
+    margin-right: 8px;
+  }
+}
