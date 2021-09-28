@@ -12,6 +12,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
 //   @media (min-device-pixel-ratio: 2),
 //     (min-resolution: 192dpi),
 //     (min-resolution: 2dppx) {
@@ -65,19 +66,22 @@
 //   }
 // }
 
-.hero-container {
-  max-width: 360px;
-  @media screen and (min-width: 1200px) {
-    max-width: 696px;
-  }
- }
-.hero-container__title {
+.hero__title {
   font-weight: 900;
   font-size: 26px;
   line-height: 1.61;
   letter-spacing: 0.06em;
   text-align: center;
 
-  color: var(--main-title-color); 
+  color: var(--main-title-color);
   margin: 0 auto;
+  max-width: 360px;
+  @media screen and (min-width: 1200px) {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-align: center;
+    max-width: 696px;
   }
+}
