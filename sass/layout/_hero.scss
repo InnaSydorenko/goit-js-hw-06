@@ -69,7 +69,9 @@
 
 .hero-container {
   max-width: 360px;
-}
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+  }
 
 .hero-container__title {
   font-weight: 900;
