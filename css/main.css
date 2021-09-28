@@ -36,10 +36,6 @@ ul {
   text-decoration: none;
 }
 
-img {
-  display: block;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -315,8 +311,33 @@ img {
   }
 }
 
+.benefits-list {
+  padding-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+}
+
 .benefits-list__item:not(:last-child) {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-list__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits-list__item {
+    flex-basis: calc(100% / 4 - 30px);
+  }
 }
 
 .benefits-list__box {
@@ -336,9 +357,13 @@ img {
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-list__title-third {
+    text-align: left;
+  }
 }
 
 .benefits-list__text {
@@ -350,7 +375,14 @@ img {
 }
 
 .about {
-  padding-top: 0;
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .about {
+    display: block;
+    padding-top: 0;
+  }
 }
 
 .about__secondary-title {
@@ -409,19 +441,37 @@ img {
 }
 
 .team-list {
-  display: flex;
-  justify-content: center;
+  margin-bottom: -30px;
+  text-align: center;
 }
 
-.team-list__content {
-  width: 270px;
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+}
+
+.team-list .team-list__content {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  margin-bottom: 30px;
 }
 
-.team-list__content:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .team-list .team-list__content {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list .team-list__content {
+    flex-basis: calc(100% / 4 - 30px);
+  }
 }
 
 .team-list__box {
