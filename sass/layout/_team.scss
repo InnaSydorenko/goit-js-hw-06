@@ -4,16 +4,20 @@
 .team__secondary-title {
   text-align: center;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--secondary-title-color);
 
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
 }
 .team-list {
-  margin-bottom: -30px;
-  text-align: center;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;

@@ -1,7 +1,6 @@
 .socials-list {
   display: flex;
-  align-items: center;
-  max-width: 206px;
+  justify-content: center;
 }
 
 .socials-list__item:not(:last-child) {
