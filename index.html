@@ -20,14 +20,8 @@
 <body>
     <!-- Header -->
     <header class="header">
-        <div class="container">
-            <button type="button" class="header-button is-open" data-menu-button>
-                <svg class="" width="40" height="40" aria-label="Переключатель мобильного меню">
-                    <use class="header-button__icon-menu" href="./images/icons.svg#icon-menu_24px-1"></use>
-                    <use class="header-button__icon-close" href="./images/icons.svg#icon-close_24px-1"></use>
-                </svg>
-            </button> -->
-       <nav class="header-navigation">
+        <div class="header-container container">
+         <nav class="header-navigation">
             <a href="" class="header__logo logo link"><span class="header__link logo">Web</span>Studio</a>
             <ul class="header-list list">
                 <li class="header-list__item"><a class="header-list__link link current" href="">Студия</a></li>
@@ -35,8 +29,7 @@
                 <li class="header-list__item"><a class="header-list__link link" href="">Контакты</a></li>
             </ul>
         </nav>
-       
-        <ul class="header__header-adress header-adress">
+         <ul class="header__header-adress header-adress">
             <li class="header-adress__item">
                 <a class="header-adress__mail-link" href="mailto:info@devstudio.com"><svg class="header-adress__logo-mail" width="16" height="12" style="fill: currentColor;">
                     <use href="./images/icons.svg#icon-envelope-hover-1"></use>
@@ -48,7 +41,36 @@
                     </svg>+38 096 111 11 11</a>
              </li>
         </ul>
-        
+            <button type="button" class="header-button">
+                   <use class="header-button__icon-menu" href="./images/icons.svg#icon-menu_24px-1"></use>
+                </svg>
+             </button>
+        </div>
+        <div class="mobile-menu is-hidden">
+            <div class="mobile-container container">
+           <button type="button" class="button-close">
+            <svg width="18.67" height="18.67" aria-label="Переключатель мобильного меню">
+              <use class="header-button__icon-close" href="./images/icons.svg#icon-close_24px-1"></use>
+            </svg>
+           </button>
+            <ul class="mobile-list list">
+                <li class="mobile-list__item"><a class="mobile-list__link" href="">Студия</a></li>
+                <li class="mobile-list__item"><a class="mobile-list__link" href="./portfolio.html">Портфолио</a></li>
+                <li class="mobile-list__item"><a class="mobile-list__link" href="">Контакты</a></li>
+            </ul>
+            <div class="mob--list-bottom">
+            <ul class="mob-contacts-list list">
+                <li class="mob-contacts-list__item"><a class="mob-contacts-list__link mob-contacts-list__tel-link" href="">+38 096 111 11 11</a></li>
+                <li class="mob-contacts-list__item"><a class="mob-contacts-list__link" href="">info@devstudio.com</a></li>
+            </ul>
+            <ul class="mob-socials-list list">
+                <li class="mob-socials-list__item"><a class="mob-socials-list__link" href="">Instagram</a></li>
+                <li class="mob-socials-list__item"><a class="mob-socials-list__link" href="">Twitter</a></li>
+                <li class="mob-socials-list__item"><a class="mob-socials-list__link" href="">Facebook</a></li>
+                <li class="mob-socials-list__item"><a class="mob-socials-list__link" href="">LinkedIn</a></li>
+            </ul>
+            </div>
+        </div>
         </div>
     </header>
     <!-- Main-->
@@ -413,10 +435,10 @@
         })();
 </script>
 <script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
-    <script defer src="js/mobile-menu.js"></script>
-</body>
+ </body>
 
 </html>
