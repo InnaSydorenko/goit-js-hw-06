@@ -7,11 +7,12 @@
     <title>Web Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/main.min.css">
@@ -20,31 +21,63 @@
 <body>
     <!-- Header -->
     <header class="header">
-        <div class="container">
+        <div class="header-container container">
             <nav class="header-navigation">
                 <a href="" class="header__logo logo link"><span class="header__link logo">Web</span>Studio</a>
                 <ul class="header-list list">
                     <li class="header-list__item"><a class="header-list__link link" href="./index.html">Студия</a></li>
-                    <li class="header-list__item"><a class="header-list__link link current" href="">Портфолио</a></li>
+                    <li class="header-list__item"><a class="header-list__link link current" href="">Портфолио</a>
+                    </li>
                     <li class="header-list__item"><a class="header-list__link link" href="">Контакты</a></li>
                 </ul>
             </nav>
-    
             <ul class="header__header-adress header-adress">
                 <li class="header-adress__item">
-                    <a class="header-adress__mail-link" href="mailto:info@devstudio.com"><svg class="header-adress__logo-mail" width="16"
-                            height="12" style="fill: currentColor;">
+                    <a class="header-adress__mail-link" href="mailto:info@devstudio.com"><svg
+                            class="header-adress__logo-mail" width="16" height="12" style="fill: currentColor;">
                             <use href="./images/icons.svg#icon-envelope-hover-1"></use>
                         </svg>info@devstudio.com</a>
                 </li>
                 <li class="header-adress__item">
-                    <a class="header-adress__tel-link" href="tel:+380961111111"><svg class="header-adress__logo-tel" width="10" height="16"
-                            style="fill: currentColor;">
+                    <a class="header-adress__tel-link" href="tel:+380961111111"><svg class="header-adress__logo-tel"
+                            width="10" height="16" style="fill: currentColor;">
                             <use href="./images/icons.svg#icon-Vector-1"></use>
                         </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
-    
+            <button type="button" class="header-button">
+                <svg class="benefits-list__logo" width="24" height="16">
+                    <use class="header-button__icon-menu" href="./images/icons.svg#icon-menu_24px-1"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu is-hidden">
+            <div class="container">
+                <button type="button" class="button-close">
+                    <svg width="18.67" height="18.67" aria-label="Переключатель мобильного меню">
+                        <use class="header-button__icon-close" href="./images/icons.svg#icon-close_24px-1"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-list list">
+                    <li class="mobile-list__item"><a class="mobile-list__link" href="">Студия</a></li>
+                    <li class="mobile-list__item"><a class="mobile-list__link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="mobile-list__item"><a class="mobile-list__link" href="">Контакты</a></li>
+                </ul>
+                <div class="mob--list-bottom">
+                    <ul class="mob-contacts-list list">
+                        <li class="mob-contacts-list__item"><a class="mob-contacts-list__link mob-contacts-list__tel-link"
+                                href="">+38 096 111 11 11</a></li>
+                        <li class="mob-contacts-list__item"><a class="mob-contacts-list__link"
+                                href="">info@devstudio.com</a></li>
+                    </ul>
+                    <ul class="mob-socials-list list">
+                        <li class="mob-socials-list__item"><a class="mob-socials-list__link" href="">Instagram</a></li>
+                        <li class="mob-socials-list__item"><a class="mob-socials-list__link" href="">Twitter</a></li>
+                        <li class="mob-socials-list__item"><a class="mob-socials-list__link" href="">Facebook</a></li>
+                        <li class="mob-socials-list__item"><a class="mob-socials-list__link" href="">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
     <!-- Main -->
