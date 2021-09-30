@@ -109,8 +109,7 @@
     margin-right: 10px;
   }
 }
-.header-button,
-.button-close {
+.header-button {
   width: 40px;
   height: 40px;
   border: none;
@@ -121,6 +120,11 @@
   position: absolute;
   right: 15px;
   top: -37px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
 }
 
 .mobile-menu {
