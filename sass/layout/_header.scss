@@ -153,6 +153,10 @@
   border: none;
   cursor: pointer;
   background-color: transparent;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -166,6 +170,10 @@
   border: none;
   cursor: pointer;
   background-color: transparent;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .mobile-menu {
@@ -198,6 +206,10 @@
   letter-spacing: 0.02em;
   color: #212121;
   text-decoration: none;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .mob-contacts-list {
@@ -220,6 +232,10 @@
   letter-spacing: 0.02em;
   color: #757575;
   text-decoration: none;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .mob-contacts-list__tel-link {

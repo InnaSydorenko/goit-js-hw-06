@@ -351,6 +351,10 @@ img {
   background-color: transparent;
 }
 
+.header-button:hover, .header-button:focus {
+  color: var(--accent-color);
+}
+
 @media screen and (min-width: 768px) {
   .header-button {
     display: none;
@@ -366,6 +370,10 @@ img {
   border: none;
   cursor: pointer;
   background-color: transparent;
+}
+
+.button-close:hover, .button-close:focus {
+  color: var(--accent-color);
 }
 
 .mobile-menu {
@@ -399,6 +407,10 @@ img {
   text-decoration: none;
 }
 
+.mobile-list__link:hover, .mobile-list__link:focus {
+  color: var(--accent-color);
+}
+
 .mob-contacts-list {
   margin-bottom: 64px;
 }
@@ -418,6 +430,10 @@ img {
   letter-spacing: 0.02em;
   color: #757575;
   text-decoration: none;
+}
+
+.mob-contacts-list__link:hover, .mob-contacts-list__link:focus {
+  color: var(--accent-color);
 }
 
 .mob-contacts-list__tel-link {
