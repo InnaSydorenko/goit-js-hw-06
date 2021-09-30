@@ -1,5 +1,5 @@
 .header {
-  width: 100%;
+  // width: 100%;
   border-bottom: 1px solid #ececec;
   & .container {
     display: flex;
@@ -18,6 +18,9 @@
 
 .header-list {
   display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .header-list__item:not(:last-child) {
@@ -47,26 +50,46 @@
   align-items: center;
   justify-content: center;
   margin-left: auto;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    align-items: flex-start;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
 }
 
 .header-adress__item {
-  display: flex;
-  align-items: baseline;
-  &:not(:last-child) {
-    margin-right: 50px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    &:not(:last-child) {
+      margin-right: 50px;
+      margin-bottom: 0;
+    }
   }
 }
 
 .header-adress__mail-link {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
 
   color: #757575;
@@ -75,6 +98,14 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+  & {
+    @media screen and (min-width: 1200px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      font-size: 14px;
+      line-height: 1.14;
+    }
   }
 
   .header-adress__logo-mail {
@@ -87,12 +118,10 @@
 .header-adress__tel-link {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
 
@@ -102,6 +131,14 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+  & {
+    @media screen and (min-width: 1200px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      font-size: 14px;
+      line-height: 1.14;
+    }
   }
 
   .header-adress__logo-tel {
@@ -116,6 +153,9 @@
   border: none;
   cursor: pointer;
   background-color: transparent;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 .button-close {
   position: absolute;
