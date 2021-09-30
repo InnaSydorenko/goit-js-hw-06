@@ -1,11 +1,13 @@
 .header {
+  width: 100%;
   border-bottom: 1px solid #ececec;
-  position: fixed;
+  // position: fixed;
   & .container {
     display: flex;
   }
 }
 .header-container {
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
@@ -148,11 +150,6 @@
       margin-bottom: 32px;
     }
   }
-}
-
-.mobile-container {
-  display: flex;
-  flex-direction: column;
 }
 
 .mobile-list__link {

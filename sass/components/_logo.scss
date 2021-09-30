@@ -7,7 +7,7 @@
   color: var(--accent-color);
   color: #000000;
 
-  margin-right: 128px;
+  // margin-right: 128px;
 
   padding-top: 16px;
   padding-bottom: 16px;
@@ -21,6 +21,8 @@
     color: #fff;
   }
   .header__link {
+    padding-top: 16px;
+    padding-bottom: 16px;
     font-family: "Raleway";
     font-weight: 700;
     font-size: 26px;
