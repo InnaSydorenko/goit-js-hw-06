@@ -382,6 +382,7 @@ img {
   width: 100vw;
   top: 0;
   height: 100vh;
+  z-index: 999;
   padding-top: 48px;
   padding-bottom: 48px;
 }
@@ -931,6 +932,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 100%;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1010,8 +1012,11 @@ img {
 }
 
 .portfolio-box {
-  width: 370px;
   margin-bottom: 30px;
+}
+
+.portfolio-box:hover .hover-text {
+  transform: translateY(0%);
 }
 
 @media screen and (min-width: 768px) {
@@ -1028,7 +1033,9 @@ img {
 }
 
 .portfolio-item {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1039,6 +1046,10 @@ img {
 .card-thumb {
   position: relative;
   overflow: hidden;
+}
+
+.image {
+  width: 100%;
 }
 
 .hover-text {
@@ -1054,11 +1065,13 @@ img {
   letter-spacing: 0.03em;
   color: #ffffff;
   overflow: auto;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-content {
+  max-height: 100%;
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
