@@ -6,8 +6,7 @@
 
 .text-form {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   margin-bottom: 30px;
 
   font-weight: 700;
@@ -16,7 +15,7 @@
   letter-spacing: 0.03em;
 
   color: #212121;
-}
+ }
 
 .form-box {
   height: 100%;
@@ -117,8 +116,8 @@
   display: flex;
   align-items: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
   &::before {
@@ -129,6 +128,10 @@
     border: 2px solid #212121;
     border-radius: 2px;
     margin-right: 7px;
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
   .checkbox-input:checked + &::before {
     background: var(--accent-color);
