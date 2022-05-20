@@ -1,1 +1,1 @@
-# goit-markup-hw-08
+# practice-js
