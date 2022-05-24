@@ -8,7 +8,7 @@ const ingredients = [
 ];
 
 
-const ulContainer = document.querySelector('ul');
+const ulContainer = document.querySelector('#ingredients');
 
 
 
