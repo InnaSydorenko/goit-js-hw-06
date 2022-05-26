@@ -4,7 +4,10 @@ img {
     height: 294px;
 }
 
-
+.text-color {
+    font-size: large;
+    color: #f44339;
+}
 .gallery {
     display: flex;
 
